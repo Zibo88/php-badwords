@@ -18,10 +18,10 @@
             <?php
                 $myString = 'Finché non diverranno coscienti della loro forza, non si ribelleranno e, finché non si ribelleranno, non diverranno coscienti della loro forza.';
                 $myStringLength = strlen($myString);
-                // parola da eleiminare dall'array
-                $badWords = $_GET ['forza'];
+                // parola da eliminare dall'array, questa va inserita nell'url (?parola)
+                $badWords = $_GET['parola'];
                 // elimino la parola utilizzando la funzione str_replace dando come parametri (la parola da eliminare, con cosa la voglio eliminare, la variabile interessata)
-                $censuredString = str_replace('forza', '***', $myString);
+                $censuredString = str_replace($badWords, '***', $myString);
                 $censuredStringLength = strlen($censuredString);
             ?>
         

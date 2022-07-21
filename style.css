@@ -1,0 +1,32 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+}
+
+h2{
+    margin: 10px;
+    font-style: italic;
+}
+
+.normal-string, .censored-string{
+    margin: 40px 0;
+}
+
+.normal-string p, .censored-string div {
+    margin: 20px 0;
+}
+
+.red{
+    color: red;
+}
+
+.blue{
+    color: blue;
+}
